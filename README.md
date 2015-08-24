@@ -1,6 +1,7 @@
 # design-patterns
 23 Patterns GOF and 10 Patterns Java EE Blueprints
-###############################################[Creational Design Patterns]####################################
+
+#[Creational Design Patterns]
 
 1- Singleton: cria unica instancia da aplicacao, devemos levar em contra o acesso simultaneo na inicializacao desse objeto,
 sincronizando a construcao do mesmo. Esse design pattern nao e recomendado para utilizacao em clauster,
@@ -20,7 +21,7 @@ pois ao inicializar a instancia em JVM diferentes ele deixaria de ser singleton.
 	informacoes na base de dados.
 
 
-###################################################[Structural Design Patterns]##################################
+#[Structural Design Patterns]
 
 1- Adapter: Podemos dizer que e um design pattern de compatibilizacao da interfaces de objetos distintos, porem com abstracao semelhantes.
 
@@ -49,7 +50,7 @@ outros nós, e nós do tipo folha, que não podem conter outros nós.
 7- Decorator: e um design muito util quando queremos adicionar comportamento / responsabilidades em classes distintas, sendo usado
 	 para modificar a funcionalidade de um objeto em tempo de execucao.
 
-###################################################[Behavioral Design Patterns]##################################
+#[Behavioral Design Patterns]
 
 1- Template Method: é uma técnica de modelagem de classes abstratas e sub-classes, que se baseia na seguinte idéia:
 	--> Definimos uma classe abstrata com métodos abstratos e métodos concretos.
@@ -92,7 +93,7 @@ outros nós, e nós do tipo folha, que não podem conter outros nós.
     necessárias em transações e orquestração de processos, tornando a aplicação deste design pattern bastante atraente para cenários corporativos em geral.
 
 
-###################################################[Java EE Blueprints]##################################
+#[Java EE Blueprints]
 
 1- Service Locator
 
