@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DoPayment version="1.1.0" xmlns="http://wsgate.elavon.com.br">
+	<Language>PT-BR</Language>
+	<TransactionID>12345678901234567890</TransactionID>
+	<PaymentAction>Auth</PaymentAction>
+	<IPAddress>191.209.113.90</IPAddress>
+	<MerchantDetails>
+		<TerminalID>0019410000000000000001</TerminalID>
+		<RegKey>FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</RegKey>
+	</MerchantDetails>
+	<PurchaseDetails>
+		<AdditionalID>123456123H</AdditionalID> <!-- Campo opcional, para referencia do cliente -->
+		<TotalAmount currencyCode="BRL">1000</TotalAmount>
+		<DateTime>2015-08-12T15:00:00-03:00</DateTime>
+		<OrderDescription>GATEWAY-TEST</OrderDescription> <!-- Campo opcional para descricao da venda -->
+	</PurchaseDetails>
+	<PaymentRequestDetails>
+		<Card>
+			<CardProduct>Visa.Credit</CardProduct>
+			<CardData>4444111122223333=1230</CardData> <!-- CardNumber=CardExpiration (MMYY) -->
+			<CVV2Indicator>1</CVV2Indicator> <!-- indica que o CVV foi informado -->
+			<CVV2>424</CVV2>
+			<AuthorizationAmount currencyCode="BRL">1000</AuthorizationAmount>
+			<Installments type="M">6</Installments> <!-- Numero de parcelas - type=M (Merchant Installment) -->
+			<POSEntryCapability>01</POSEntryCapability> <!-- ponto de venda - 01 - Manual Entry Only / E-Commerce  -->
+			<CardEntryMode>01</CardEntryMode> <!-- 01 - Card Not Present (01) | 02 - Card Present (71)  -->
+			<ECI>7</ECI> <!-- Nivel de seguranca E-Commerce -->
+		</Card>
+	</PaymentRequestDetails>
+</DoPayment>
